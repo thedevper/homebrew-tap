@@ -1,21 +1,23 @@
 class Shoal < Formula
   desc "Local-first, AI-first kanban for small teams"
   homepage "https://github.com/TheDevper/shoal"
-  version "0.1.0"
+  version "0.1.1"
+  license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/TheDevper/shoal/releases/download/v0.1.0/shoal-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "0ccbd30aafa10f34fa88e5cd52bce365cc36a4b8d45f3ef248a9f42815f89447"
+      url "https://github.com/TheDevper/shoal/releases/download/v0.1.1/shoal-v0.1.1-darwin-arm64.tar.gz"
+      sha256 "3a09823af5cf27e12c83f67c7fbec2454939724627e85443fc8113fc9c3de4c6"
     end
     on_intel do
-      url "https://github.com/TheDevper/shoal/releases/download/v0.1.0/shoal-v0.1.0-darwin-x64.tar.gz"
-      sha256 "ec882e44fec7de0c3c5ffd43896dda42b9282743c81abb408c076864508c9395"
+      url "https://github.com/TheDevper/shoal/releases/download/v0.1.1/shoal-v0.1.1-darwin-x64.tar.gz"
+      sha256 "f9c7fe0d5879adddb59fabce196a1797dd8c8949e9f5f12ce6d5249c2ac8c64a"
     end
   end
 
   def install
     bin.install "shoal"
+    prefix.install "LICENSE", "NOTICE", "THIRD-PARTY-NOTICES.txt"
   end
 
   test do
