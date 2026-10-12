@@ -1,17 +1,17 @@
 class Rodu < Formula
   desc "Local-first, AI-first kanban for small teams"
   homepage "https://github.com/TheDevper/rodu"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/TheDevper/rodu/releases/download/v0.4.0/rodu-v0.4.0-darwin-arm64.tar.gz"
-      sha256 "90179943a0edc67037d76f3f19fcca286d618e720f5f7fb9e157181695ee96f9"
+      url "https://github.com/TheDevper/rodu/releases/download/v0.5.0/rodu-v0.5.0-darwin-arm64.tar.gz"
+      sha256 "05e469287735471dbe2c04001b0801008087e329a52c5141d569ffe6d0b62fd8"
     end
     on_intel do
-      url "https://github.com/TheDevper/rodu/releases/download/v0.4.0/rodu-v0.4.0-darwin-x64.tar.gz"
-      sha256 "5e8e730f041dc9afa9f9f41c942e72b9f63350b93270b4d199f558c478c3f6ad"
+      url "https://github.com/TheDevper/rodu/releases/download/v0.5.0/rodu-v0.5.0-darwin-x64.tar.gz"
+      sha256 "bb55035b555b6d0e8a42c8e6043d963e9cb2ab1067507b79e9fccbaf8ec98307"
     end
   end
 
